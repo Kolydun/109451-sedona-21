@@ -6,23 +6,23 @@
 </head>
 <body class="page__body">
 <header class="page-header">
-  <a class="page-header__logo">
+  <a class="page-header__logo" href="index.html">
     <img src="https://via.placeholder.com/150x150" width="107" height="84" alt="Седона">
   </a>
-  <div class="main-nav__wrapper">
+  <div class="main-nav">
     <ul class="main-nav__list">
-      <li class="main-nav__item"><a href="#">Главная</a></li>
-      <li class="main-nav__item"><a href="">ФОТО И ВИДЕО</a></li>
-      <li class="main-nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-      <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+      <li class="main-nav__item main-nav__item--disabled"><a href="#">Главная</a></li>
+      <li class="main-nav__item main-nav__item--disabled"><a href="">ФОТО И ВИДЕО</a></li>
+      <li class="main-nav__item main-nav__item--disabled"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
+      <li class="main-nav__item main-nav__item--disabled"><a href="#">HTML ACADEMY</a></li>
     </ul>
   </div>
   <div class="form-header-landscape">
-    <h1 class="form-header-landscape__heading">SEDONA</h1>
+    <img src="https://via.placeholder.com/150x150" class="page-heade__sedona-name" width="461" height="80" alt="Седона">
   </div>
 </header>
 <main class="forms">
-  <div class="forms__form-description">
+  <div class="form-description">
     <h2 class="form-description__heading">Оставьте свой отзыв</h2>
     <p class="form-description__text">
       Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
@@ -34,17 +34,17 @@
         <h2 class="form-fields__names-heading">Представьтесь:</h2>
         <div class="form-fields__user-name-field">
           <label for="user-name" class="user-name-field__label">имя*:</label>
-          <input type="text" name="Имя пользователя" id="user-name" placeholder="Петр" required
+          <input type="text" name="Username" id="user-name" placeholder="Петр" required
                  class="user-name-field__input-name">
         </div>
         <div class="form-fields__user-second-name-field">
           <label for="user-second-name" class="user-second-name-field__label">фамилия*:</label>
-          <input type="text" name="Фамилия пользователя" id="user-second-name" placeholder="Иванов" required
+          <input type="text" name="User surname" id="user-second-name" placeholder="Иванов" required
                  class="user-second-name-field__input-second-name">
         </div>
         <div class="form-fields__user-patronymic-field">
           <label for="user-patronymic" class="user-patronymic-field__label">отчество:</label>
-          <input type="text" name="Отчество пользователя" id="user-patronymic" placeholder="Александрович"
+          <input type="text" name="User patronymic" id="user-patronymic" placeholder="Александрович"
                  class="user-patronymic-field__input-patronymic">
         </div>
       </div>
@@ -52,37 +52,37 @@
         <h2 class="form-fields__contacts-heading">Контактная информация:</h2>
         <div class="form-fields__contacts-phone">
           <label for="contacts-phone" class="contacts-phone__label">Контактный телефон*:</label>
-          <input type="text" name="Телефон пользователя" id="contacts-phone" placeholder="Введите телефон"
+          <input type="tel" name="User phone" id="contacts-phone" placeholder="Введите телефон"
                 required class="contacts-phone__input">
         </div>
         <div class="form-fields__contacts-email">
           <label for="contacts-email" class="contacts-email__label">электронная почта*:</label>
-          <input type="email" name="Электронная почта пользователя" id="contacts-email" placeholder="Введите e-mail"
+          <input type="email" name="User email" id="contacts-email" placeholder="Введите e-mail"
                  required class="contacts-email__input">
         </div>
       </div>
       <div class="form-fields__grade-wrapper">
         <h2 class="form-fields__grade-heading">Ваше общее впечатление:</h2>
-        <input type="radio" id="positive-grade" name="скорее положительное" class="grade__positive-input">
+        <input type="radio" id="positive-grade" name="rather positive" class="grade__positive-input">
         <label for="positive-grade" class="grade__positive-label">Скорее положительное</label>
-        <input type="radio" id="negative-grade" name="скорее отрицательное" class="grade__negative-input">
+        <input type="radio" id="negative-grade" name="rather negative" class="grade__negative-input">
         <label for="negative-grade" class="grade__negative-label">Скорее отрицательное</label>
-        <input type="radio" id="neutral-grade" name="затрудняюсь ответить" class="grade__neutral-input">
+        <input type="radio" id="neutral-grade" name="find it difficult to answer" class="grade__neutral-input">
         <label for="neutral-grade" class="grade__neutral-label">Затрудняюсь ответить</label>
       </div>
       <div class="form-fields__attractions">
-        <input type="checkbox" id="bridge" name="мост дьявола" class="attractions__bridge-input">
+        <input type="checkbox" id="bridge" name="devil's bridge" class="attractions__bridge-input">
         <label for="bridge" class="attractions__bridge-label">Мост Дьявола</label>
-        <input type="checkbox" id="mountain" name="гора-колокол" class="attractions__mountain-input">
+        <input type="checkbox" id="mountain" name="bell mountain" class="attractions__mountain-input">
         <label for="mountain" class="attractions__mountain-label">Гора-Колокол</label>
-        <input type="checkbox" id="park" name="слайд-парк" class="attractions__park-input">
+        <input type="checkbox" id="park" name="slide park" class="attractions__park-input">
         <label for="park" class="attractions__park-label">Слайд-парк</label>
-        <input type="checkbox" id="rock" name="красные скалы" class="attractions__rock-input">
+        <input type="checkbox" id="rock" name="red rocks" class="attractions__rock-input">
         <label for="rock" class="attractions__rock-label">Красные скалы</label>
       </div>
       <div class="form-fields__comment">
         <h2 class="comment__heading">Опишите свои эмоции:</h2>
-        <textarea name="текст сообщения" class="comment__text" rows="10" cols="30"
+        <textarea name="Message text" id="message" class="comment__text" rows="10" cols="30"
                   placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
       <input type="submit" value="Отправить отзыв" class="form-fields__submit-button">
@@ -90,23 +90,27 @@
   </div>
 </main>
 <footer class="page-footer">
-  <h3 class="page-footer__tagline">#visitsedona</h3>
+  <p class="page-footer__tagline">#visitsedona</p>
   <div class="page-footer__social-media">
-    <a href="#" class="social-media__item">
-      <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Твиттер">
-    </a>
-    <a href="#" class="social-media__item">
-      <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Фейсбук">
-    </a>
-    <a href="#" class="social-media__item">
-      <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Ютуб">
-    </a>
-  </div>
-  <div class="page-footer__academy-info">
-    <h3 class="academy-info__text">Разработано</h3>
-    <a class="academy-info__link">
-      <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
-    </a>
+    <div class="social-media">
+      <a href="#" class="social-media__item">
+        <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Твиттер">
+      </a>
+      <a href="#" class="social-media__item">
+        <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Фейсбук">
+      </a>
+      <a href="#" class="social-media__item">
+        <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Ютуб">
+      </a>
+    </div>
+    <div class="page-footer__academy-info">
+      <div class="academy-info">
+        <p class="academy-info__text">Разработано</p>
+        <a class="academy-info__link">
+          <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
 </body>
