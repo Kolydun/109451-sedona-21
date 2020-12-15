@@ -5,7 +5,7 @@
 .top-text__tagline,
 .top-text__reasons-heading {
   font-family: @font;
-  font-size: @font-normal;
+  font-size: @font-size-normal;
   line-height: @line-height-normal;
   text-transform: uppercase;
 }
@@ -14,28 +14,41 @@
   font-weight: @font-bold;
 }
 
-.reasons {
+.reasons__heading {
   font-family: @font;
+  font-style: @font-normal;
   font-size: @font-size-normal;
   line-height: @line-height-normal;
-  text-transform: uppercase;
-}
-
-.reason__heading {
   font-weight: @font-bold;
+  text-transform: uppercase;
 }
 
 .advantages-list {
   list-style: @decoration;
-  font: @font;
+  font-family: @font;
   font-size: @font-size-normal;
   line-height: @line-height-normal;
   text-transform: uppercase;
   color: @font-black;
 }
 
+.reasons__text,
+.reasons__number {
+  list-style: @decoration;
+  font-family: @font;
+  font-size: @font-size-normal;
+  line-height: @line-height-normal;
+  text-transform: uppercase;
+}
+
 .advantages-list__item-name {
   font-weight: @font-bold;
+  list-style: @decoration;
+  font-family: @font;
+  font-size: @font-size-normal;
+  line-height: @line-height-normal;
+  text-transform: uppercase;
+  color: @font-black;
 }
 
 .first-reason,
@@ -46,6 +59,5 @@
 
 .other-reasons {
   list-style: @decoration;
-  background-color: @baclground-grey;
+  background-color: @background-grey;
 }
-
