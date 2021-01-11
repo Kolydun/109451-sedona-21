@@ -1,6 +1,60 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__landscape {
-  background-image: url("../../img/landscape-mobile.png");
+  background-image: url("../img/landscape-mobile.png");
   height: 389px;
-  width: 901px;
+  width: 100%;
   background-repeat: no-repeat;
+  order: 3;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/landscape-tablet.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/landscape-desktop.png");
+  }
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: center;
+  order: 2;
+  height: 56px;
+
+  @media (min-width: @tablet-width) {
+    display: contents;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: contents;
+  }
+}
+
+.page-header__landscape-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.page-header__logo {
+  @media (min-width: @tablet-width) {
+    width: 102px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 186px;
+  }
 }

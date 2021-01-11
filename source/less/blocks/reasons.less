@@ -1,31 +1,107 @@
+.reasons {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.reasons__top-text {
+  @media (min-width: @tablet-width) {
+    padding: 0 112px;
+  }
+}
+
+.reasons__text-container {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    height: 256px;
+    width: 256px;
+  }
+}
+
 .reasons__top-text-tagline,
 .reasons__top-text-heading {
   line-height: @line-height-big;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin: 0 30px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .reasons__top-text-tagline {
   font-weight: @font-bold;
   font-size: @font-size-normal;
+  margin-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-size-medium;
+  }
 }
 
 .reasons__heading {
   font-size: @font-size-medium;
   line-height: @line-height-big;
   font-weight: @font-bold;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-align: center;
+  margin: 40px 30px 22px 30px;
 }
 
 .reasons__text,
 .reasons__number {
   list-style: @decoration;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-align: center;
 }
 
-.first-reason,
-.second-reason {
+.reasons__text {
+  margin: 25px 15px 43px 15px;
+}
+
+.reasons__first,
+.reason__second {
   background-color: @background-blue;
   color: @font-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: initial;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+    padding-left: 60px;
+  }
 }
 
-.other-reasons {
+.reasons__other {
   list-style: @decoration;
   background-color: @background-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: initial;
+  }
+}
+
+.reasons__third,
+.reasons__fourth,
+.reason__fifth {
+  text-align: center;
 }

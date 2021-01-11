@@ -14,4 +14,31 @@ img {
   margin: 0;
   box-sizing: content-box;
   background-color: @background-white;
+  min-width: @mobile-width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-header,
+.page-body,
+.page-footer {
+  width: @mobile-width;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header,
+  .page-body,
+  .page-footer {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header,
+  .page-body,
+  .page-footer {
+    width: 1200px;
+  }
 }
