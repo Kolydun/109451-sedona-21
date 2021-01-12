@@ -6,11 +6,6 @@
     background-color: @background-white;
     order: 0;
   }
-
-  @media (min-width: @desktop-width) {
-    background-color: @background-white;
-    order: 0;
-  }
 }
 
 .main-nav__list {
@@ -38,7 +33,7 @@
   }
 }
 
-.main-nav__item-first {
+.main-nav__item:first-child {
   @media (min-width: @tablet-width) {
     margin-left: 50px;
   }
@@ -48,7 +43,7 @@
   }
 }
 
-.main-nav__item-second {
+.main-nav__item:nth-child(2) {
   @media (min-width: @tablet-width) {
     margin-left: 77px;
     margin-right: 212px;
@@ -60,7 +55,7 @@
   }
 }
 
-.main-nav__item-fourth {
+.main-nav__item:nth-child(4) {
   @media (min-width: @tablet-width) {
     margin-left: 51px;
   }
