@@ -1,9 +1,33 @@
+.form-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 434px;
+    height: 129px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 107px;
+  }
+}
+
 .form-description__heading {
   font-weight: @font-bold;
   font-size: @font-size-normal;
   line-height: @line-height-big;
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-size-big;
+  }
 }
 
 .form-description__text {
   color: @font-grey;
+  text-align: center;
+  line-height: @line-height-medium;
 }
