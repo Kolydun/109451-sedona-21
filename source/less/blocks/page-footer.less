@@ -1,5 +1,42 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: initial;
+    justify-content: space-around;
+  }
+}
+
 .page-footer__tagline {
   font-weight: @font-bold;
   font-size: @font-size-normal;
   line-height: @line-height-big;
+  margin: 38px 77px 33px 77px;
+
+  @media (min-width: @tablet-width) {
+    margin: 38px 0 33px 0;
+  }
+}
+
+.page-footer__links-social-media-item {
+  text-decoration: @decoration;
+  margin-right: 6px;
+}
+
+.page-footer__links-social-media-item:last-child {
+  margin-right: 0;
+}
+
+.page-footer__links-academy-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__links-academy-info-text {
+  text-align: center;
+  margin-right: 15px;
 }

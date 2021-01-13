@@ -2,6 +2,7 @@
 <html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона главная</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -24,9 +25,9 @@
     <div class="page-header__landscape-text">
       <img class="page-header__welcome-image-top" src="https://via.placeholder.com/150x150" width="116" height="28">
       <img class="page-header__welcome-image-top" src="https://via.placeholder.com/150x150" width="106" height="18">
-      <img class="page-header__sedona-name" src="https://via.placeholder.com/150x150" width="282" height="49">
+<!--      <img class="page-header__sedona-name" src="https://via.placeholder.com/150x150" width="281" height="19">-->
 <!--      <h1 class="page-header__main-heading">SEDONA</h1>-->
-      <img class="page-header__tagline" src="https://via.placeholder.com/150x150" height="48"  width="282">
+<!--      <img class="page-header__tagline" src="https://via.placeholder.com/150x150" height="18"  width="282">-->
     </div>
   </div>
 </header>
@@ -36,12 +37,14 @@
     <p class="reasons__top-text-tagline">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
     <p class="reasons__top-text-heading">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
   </div>
-  <div class="first-reason reasons">
-    <h2 class="first-reason__heading reasons__heading">Настоящий городок</h2>
-    <span class="first-reason__number reasons__number">-№1-</span>
-    <p class="first-reason__text reasons__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-    <img src="src=https://via.placeholder.com/150x150" alt="Фотография улицы Седоны" width="520" height="260">
-  </div>
+    <div class="reasons__first">
+      <div class="reasons__text-container">
+        <h2 class="reason__first-heading reasons__heading">Настоящий городок</h2>
+        <span class="reason__first-number reasons__number">-№1-</span>
+        <p class="reason__first-text reasons__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <img src="src=https://via.placeholder.com/150x150" alt="Фотография улицы Седоны" width="520" height="260">
+    </div>
   <ul class="advantages-list">
     <li class="advantages-list__item">
       <h3 class="advantages-list__item-name">Жилье</h3>
@@ -56,28 +59,30 @@
       <p class="advantages-list__item-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
     </li>
   </ul>
-  <div class="second-reason reasons">
-    <h2 class="second-reason__heading reasons__heading">ТАМ ЕСТЬ Мост дьявола</h2>
-    <span class="second-reason__number reasons__number">-№2-</span>
-    <p class="second-reason__text reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+  <div class="reason__second reasons">
+    <div class="reasons__text-container">
+      <h2 class="reason__second-heading reasons__heading">ТАМ ЕСТЬ Мост дьявола</h2>
+      <span class="reason__second-number reasons__number">-№2-</span>
+      <p class="reason__second-text reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+    </div>
     <img src="src=https://via.placeholder.com/150x150" alt="Фотография каньона" width="520" height="260">
   </div>
-    <div class="other-reasons-wrapper">
-  <ul class="other-reasons">
-    <li class="third-reason">
-      <h2 class="third-reason__heading reasons__heading">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-      <span class="third-reason__number reasons__number">-№3-</span>
-      <p class="third-reason__text reasons__text">ВСЕ интересные места находятся очень близко</p>
+    <div class="reasons__other-wrapper">
+  <ul class="reasons__other">
+    <li class="reasons__third">
+      <h2 class="reasons__third-heading reasons__heading">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+      <span class="reasons__third-number reasons__number">-№3-</span>
+      <p class="reasons__third-text reasons__text">ВСЕ интересные места находятся очень близко</p>
     </li>
-    <li class="fourth-reason">
-      <h2 class="fourth-reason__heading reasons__heading">КРАСИВАЯ ДОРОГА</h2>
-      <span class="fourth-reason__number reasons__number">-№4-</span>
-      <p class="fourth-reason__text reasons__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+    <li class="reasons__fourth">
+      <h2 class="reasons__fourth-heading reasons__heading">КРАСИВАЯ ДОРОГА</h2>
+      <span class="reasons__fourth-number reasons__number">-№4-</span>
+      <p class="reasons__fourth-text reasons__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
     </li>
-    <li class="fifth-reason">
-      <h2 class="fifth-reason__heading reasons__heading">МАЛО ТУРИСТОВ</h2>
-      <span class="fifth-reason__number reasons__number">-№5-</span>
-      <p class="fifth-reason__text reasons__text">Большинство едет в гранд каньон и толпится там</p>
+    <li class="reason__fifth">
+      <h2 class="reason__fifth-heading reasons__heading">МАЛО ТУРИСТОВ</h2>
+      <span class="reason__fifth-number reasons__number">-№5-</span>
+      <p class="reason__fifth-ext reasons__text">Большинство едет в гранд каньон и толпится там</p>
     </li>
   </ul>
     </div>
@@ -91,32 +96,28 @@
     </div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214499.51453359996!2d-111.9023218016975!3d34.925919107791195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sua!4v1606332972661!5m2!1sen!2sua"
-      width="768" height="350" frameborder="0" style="border: none;" allowfullscreen="" aria-hidden="false"
+      width="768" height="350" frameborder="0" style="border: none;" allowfullscreen="" aria-hidden="false" class="find-hotel__map"
       tabindex="0"></iframe>
   </section>
 </main>
 <footer class="page-footer">
   <p class="page-footer__tagline">#visitsedona</p>
-  <div class="page-footer__social-media">
-    <div class="social-media">
-      <a href="#" class="social-media__item">
+  <div class="page-footer__links">
+      <a href="#" class="page-footer__links-social-media-item">
         <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Твиттер">
       </a>
-      <a href="#" class="social-media__item">
+      <a href="#" class="page-footer__links-social-media-item">
         <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Фейсбук">
       </a>
-      <a href="#" class="social-media__item">
+      <a href="#" class="page-footer__links-social-media-item">
         <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Ютуб">
       </a>
-    </div>
-    <div class="page-footer__academy-info">
-      <div class="academy-info">
-        <p class="academy-info__text">Разработано</p>
-        <a class="academy-info__link">
-          <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
-        </a>
-      </div>
-    </div>
+  </div>
+  <div class="page-footer__links-academy-info">
+    <p class="page-footer__links-academy-info-text">Разработано</p>
+    <a class="page-footer__academy-info-link">
+      <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
+    </a>
   </div>
 </footer>
 </body>
