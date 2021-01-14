@@ -1,5 +1,157 @@
+.forms {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 .form-fields {
   line-height: @line-height-normal;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: @line-height-big;
+  }
+}
+
+.form-fields__container {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 305px 305px 305px 360px 200px;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 959px;
+  }
+}
+
+.form-fields__names-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 324px;
+    height: 305px;
+  }
+}
+
+.form-fields__grade-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 324px;
+    height: 305px;
+  }
+}
+
+.form-fields__contacts-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 648px;
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    width: 959px;
+  }
+}
+
+.form-fields__attractions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 648px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+  }
+}
+
+.form-fields__comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 360px;
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+.form-fields__submit-button-container {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    width: 648px;
+    height: 150px;
+    margin: 0 auto;
+  }
 }
 
 .form-fields__grade-heading,
@@ -8,6 +160,10 @@
 .form-fields__comment-heading {
   font-weight: @font-bold;
   font-size: @font-size-normal;
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-size-medium;
+  }
 }
 
 .form-fields label {
@@ -28,4 +184,148 @@
   font-weight: @font-bold;
   text-transform: none;
   text-decoration: none;
+}
+
+
+.form-fields__names-heading {
+  margin: 0 0 20px 75px;
+}
+
+.form-fields__submit-button {
+  height: 58px;
+  width: 280px;
+  background-color: @background-blue;
+  color: @font-white;
+  border: @decoration;
+  margin-left: 20px;
+}
+
+.form-fields__user-patronymic-field,
+.form-fields__user-second-name-field,
+.form-fields__user-name-field,
+.form-fields__contacts-phone,
+.form-fields__contacts-email {
+  margin-left: 20px;
+}
+
+.form-fields__contacts-heading {
+  margin-left: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.form-fields__grade-container {
+  margin-left: 25px;
+}
+
+.form-fields__grade-heading {
+  margin-left: 27px;
+}
+
+.form-fields__attractions-heading {
+  margin-left: 11px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.form-fields__attractions-container {
+  margin-left: 25px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.form-fields__attractions-container:nth-child(2),
+.form-fields__attractions-container:nth-child(4) {
+  @media (min-width: @tablet-width) {
+    margin-left: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.form-fields__contacts-phone {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-fields__contacts-phone label {
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.form-fields__contacts-email {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-fields__contacts-email label {
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.form-fields__contacts-email input,
+.form-fields__contacts-phone input {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 257px;
+    height: 58px;
+  }
+}
+
+.form-fields__comment-text {
+  @media (min-width: @desktop-width) {
+    width: 648px;
+    height: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    height: 160px;
+  }
 }

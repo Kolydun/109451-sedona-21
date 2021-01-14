@@ -2,14 +2,16 @@
 <html lang="ru" class="page">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона форма</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
-<header class="page-header form-header">
-  <a class="page-header__logo" href="index.html">
-    <img src="https://via.placeholder.com/150x150" width="107" height="84" alt="Седона">
-  </a>
+<header class="page-header">
+  <div class="page-header__top">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/150x150" width="107" height="84" alt="Седона">
+    </a>
   </div>
   <div class="main-nav">
     <ul class="main-nav__list">
@@ -19,8 +21,14 @@
       <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
     </ul>
   </div>
-  <div class="form-header-landscape">
-    <img src="https://via.placeholder.com/150x150" class="page-heade__sedona-name" width="229" height="39" alt="Седона">
+  <div class="page-header__landscape">
+    <div class="page-header__landscape-text">
+      <img class="page-header__welcome-image-top" src="https://via.placeholder.com/150x150" width="116" height="28">
+      <img class="page-header__welcome-image-top" src="https://via.placeholder.com/150x150" width="106" height="18">
+      <!--      <img class="page-header__sedona-name" src="https://via.placeholder.com/150x150" width="281" height="19">-->
+      <!--      <h1 class="page-header__main-heading">SEDONA</h1>-->
+      <!--      <img class="page-header__tagline" src="https://via.placeholder.com/150x150" height="18"  width="282">-->
+    </div>
   </div>
 </header>
 <main class="forms">
@@ -31,7 +39,7 @@
     </p>
   </div>
   <div class="form-fields">
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post" class="form-fields__container">
       <div class="form-fields__names-wrapper">
         <h2 class="form-fields__names-heading">Представьтесь:</h2>
         <div class="form-fields__user-name-field">
@@ -60,52 +68,67 @@
       </div>
       <div class="form-fields__grade-wrapper">
         <h2 class="form-fields__grade-heading">Ваше общее впечатление:</h2>
-        <input type="radio" id="positive-grade" value="rather-positive" name="grade">
-        <label for="positive-grade">Скорее положительное</label>
-        <input type="radio" id="negative-grade" value="rather-negative" name="grade">
-        <label for="negative-grade">Скорее отрицательное</label>
-        <input type="radio" id="neutral-grade" value="find-it-difficult-to-answer" name="grade">
-        <label for="neutral-grade">Затрудняюсь ответить</label>
+        <span class="form-fields__grade-container">
+          <input type="radio" id="positive-grade" value="rather-positive" name="grade">
+          <label for="positive-grade">Скорее положительное</label>
+        </span>
+        <span class="form-fields__grade-container">
+          <input type="radio" id="negative-grade" value="rather-negative" name="grade">
+          <label for="negative-grade">Скорее отрицательное</label>
+        </span>
+        <span class="form-fields__grade-container">
+          <input type="radio" id="neutral-grade" value="find-it-difficult-to-answer" name="grade">
+          <label for="neutral-grade">Затрудняюсь ответить</label>
+        </span>
       </div>
       <div class="form-fields__attractions">
-        <input type="checkbox" id="bridge" name="devils-bridge">
-        <label for="bridge">Мост Дьявола</label>
-        <input type="checkbox" id="mountain" name="bell-mountain">
-        <label for="mountain">Гора-Колокол</label>
-        <input type="checkbox" id="park" name="slide-park">
-        <label for="park">Слайд-парк</label>
-        <input type="checkbox" id="rock" name="red-rocks">
-        <label for="rock">Красные скалы</label>
+        <h2 class="form-fields__attractions-heading">Посещенные достопримечательности:</h2>
+        <span class="form-fields__attractions-container">
+          <input type="checkbox" id="bridge" name="devils-bridge">
+          <label for="bridge">Мост Дьявола</label>
+        </span>
+        <span class="form-fields__attractions-container">
+          <input type="checkbox" id="mountain" name="bell-mountain">
+          <label for="mountain">Гора-Колокол</label>
+        </span>
+        <span class="form-fields__attractions-container">
+          <input type="checkbox" id="park" name="slide-park">
+          <label for="park">Слайд-парк</label>
+        </span>
+        <span class="form-fields__attractions-container">
+          <input type="checkbox" id="rock" name="red-rocks">
+          <label for="rock">Красные скалы</label>
+        </span>
       </div>
       <div class="form-fields__comment">
         <h2 class="form-fields__comment-heading">Опишите свои эмоции:</h2>
         <textarea name="Message-text" id="message" class="form-fields__comment-text" rows="10" cols="30"
                   placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
-      <input type="submit" value="Отправить отзыв" class="form-fields__submit-button">
+      <span class="form-fields__submit-button-container">
+        <input type="submit" value="Отправить отзыв" class="form-fields__submit-button">
+      </span>
     </form>
   </div>
 </main>
 <footer class="page-footer">
   <p class="page-footer__tagline">#visitsedona</p>
   <div class="page-footer__links">
-    <div class="page-footer__links-social-media">
-      <a href="#" class="page-footer__links-social-media-item">
-        <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Твиттер">
-      </a>
-      <a href="#" class="page-footer__links-social-media-item">
-        <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Фейсбук">
-      </a>
-      <a href="#" class="page-footer__links-social-media-item">
-        <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Ютуб">
-      </a>
-    </div>
-    <div class="page-footer__links-academy-info">
-      <p class="page-footer__links-academy-info-text">Разработано</p>
-      <a class="page-footer__links-academy-info__link">
-        <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
-      </a>
-    </div>
+    <a href="#" class="page-footer__links-social-media-item">
+      <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Твиттер">
+    </a>
+    <a href="#" class="page-footer__links-social-media-item">
+      <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Фейсбук">
+    </a>
+    <a href="#" class="page-footer__links-social-media-item">
+      <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Ютуб">
+    </a>
+  </div>
+  <div class="page-footer__links-academy-info">
+    <p class="page-footer__links-academy-info-text">Разработано</p>
+    <a class="page-footer__academy-info-link">
+      <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
+    </a>
   </div>
 </footer>
 </body>
