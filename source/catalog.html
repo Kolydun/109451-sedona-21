@@ -2,25 +2,33 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона каталог</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
-<header class="page-header form-header">
-  <a class="page-header__logo" href="index.html">
-    <img src="https://via.placeholder.com/150x150" width="107" height="84" alt="Седона">
-  </a>
+<header class="page-header">
+  <div class="page-header__top">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/150x150" width="107" height="84" alt="Седона">
+    </a>
   </div>
   <div class="main-nav">
     <ul class="main-nav__list">
-      <li class="main-nav__item"><a href="index.html">Главная</a></li>
-      <li class="main-nav__item main-nav__item--disabled"><a href="#">ФОТО И ВИДЕО</a></li>
+      <li class="main-nav__item main-nav__item--disabled"><a href="#">Главная</a></li>
+      <li class="main-nav__item main-nav__item--disabled"><a href="catalog.html">ФОТО И ВИДЕО</a></li>
       <li class="main-nav__item main-nav__item--disabled"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-      <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+      <li class="main-nav__item main-nav__item--disabled"><a href="#">HTML ACADEMY</a></li>
     </ul>
   </div>
-  <div class="form-header-landscape">
-    <img src="https://via.placeholder.com/150x150" class="page-heade__sedona-name" width="229" height="39" alt="Седона">
+  <div class="page-header__landscape">
+    <div class="page-header__landscape-text">
+      <img class="page-header__welcome-image-top" src="https://via.placeholder.com/150x150" width="116" height="28">
+      <img class="page-header__welcome-image-top" src="https://via.placeholder.com/150x150" width="106" height="18">
+      <!--      <img class="page-header__sedona-name" src="https://via.placeholder.com/150x150" width="281" height="19">-->
+      <!--      <h1 class="page-header__main-heading">SEDONA</h1>-->
+      <!--      <img class="page-header__tagline" src="https://via.placeholder.com/150x150" height="18"  width="282">-->
+    </div>
   </div>
 </header>
 <main class="catalog-main">
@@ -33,52 +41,70 @@
   <section class="photos">
     <div class="photo">
       <a class="photo__link">
-        <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
+        <img src="https://via.placeholder.com/150x150" class="photo__link-image" width="23" height="21">
       </a>
       <div class="photo__information">
-        <h3 class="photo__heading">Неродные просторы</h3>
-        <p class="photo__text">Автор фото: Борис</p>
-        <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
-        <p class="photo__likes-counter">1350</p>
-      </div>
-    </div>
-    <div class="photo">
-      <div class="photo__information">
-        <a class="photo__link">
+        <div class="photo__author">
+          <h3 class="photo__author-heading">Неродные просторы</h3>
+          <p class="photo__author-text">Автор фото: Борис</p>
+        </div>
+        <div class="photo__likes">
           <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
-        </a>
-        <h3 class="photo__heading">Местная растительность</h3>
-        <p class="photo__text">Автор фото: Сергей</p>
-        <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
-        <p class="photo__likes-counter">143</p>
+          <p class="photo__likes-counter">1350</p>
+        </div>
       </div>
     </div>
     <div class="photo">
       <a class="photo__link">
-        <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
+        <img src="https://via.placeholder.com/150x150" class="photo__link-image" width="23" height="21">
       </a>
       <div class="photo__information">
-        <h3 class="photo__heading">Дорога на север</h3>
-        <p class="photo__text">Автор фото: Петр</p>
-        <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
-        <p class="photo__likes-counter">96</p>
+        <div class="photo__author">
+          <h3 class="photo__author-heading">Местная растительность</h3>
+          <p class="photo__author-text">Автор фото: Сергей</p>
+        </div>
+        <div class="photo__likes">
+          <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
+          <p class="photo__likes-counter">143</p>
+        </div>
       </div>
     </div>
     <div class="photo">
       <a class="photo__link">
-        <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
+        <img src="https://via.placeholder.com/150x150" class="photo__link-image" width="23" height="21">
       </a>
       <div class="photo__information">
-        <h3 class="photo__heading">Мост дьявола</h3>
-        <p class="photo__text">Автор фото: Антон</p>
-        <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
-        <p class="photo__likes-counter"></p>
+        <div class="photo__author">
+          <h3 class="photo__author-heading">Дорога на север</h3>
+          <p class="photo__author-text">Автор фото: Петр</p>
+        </div>
+        <div class="photo__likes">
+          <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
+          <p class="photo__likes-counter">96</p>
+        </div>
+      </div>
+    </div>
+    <div class="photo">
+      <a class="photo__link">
+        <img src="https://via.placeholder.com/150x150" class="photo__link-image" width="23" height="21">
+      </a>
+      <div class="photo__information">
+        <div class="photo__author">
+          <h3 class="photo__author-heading">Мост дьявола</h3>
+          <p class="photo__author-text">Автор фото: Антон</p>
+        </div>
+        <div class="photo__likes">
+          <img src="https://via.placeholder.com/150x150" class="photo__likes-image" width="23" height="21">
+          <p class="photo__likes-counter">254</p>
+        </div>
       </div>
     </div>
   </section>
   <section class="video">
-    <h2 class="video__heading">Все еще сомневаетесь?</h2>
-    <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+    <div class="video__description">
+      <h2 class="video__description-heading">Все еще сомневаетесь?</h2>
+      <p class="video__description-text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+    </div>
     <!--      Тут будет видео-->
     <img src="https://via.placeholder.com/150x150" width="280" height="280">
   </section>
@@ -86,23 +112,21 @@
 <footer class="page-footer">
   <p class="page-footer__tagline">#visitsedona</p>
   <div class="page-footer__links">
-    <div class="page-footer__links-social-media">
-      <a href="#" class="page-footer__links-social-media-item">
-        <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Твиттер">
-      </a>
-      <a href="#" class="page-footer__links-social-media-item">
-        <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Фейсбук">
-      </a>
-      <a href="#" class="page-footer__links-social-media-item">
-        <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Ютуб">
-      </a>
-    </div>
-    <div class="page-footer__links-academy-info">
-      <p class="page-footer__links-academy-info-text">Разработано</p>
-      <a class="page-footer__links-academy-info__link">
-        <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
-      </a>
-    </div>
+    <a href="#" class="page-footer__links-social-media-item">
+      <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Твиттер">
+    </a>
+    <a href="#" class="page-footer__links-social-media-item">
+      <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Фейсбук">
+    </a>
+    <a href="#" class="page-footer__links-social-media-item">
+      <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Ютуб">
+    </a>
+  </div>
+  <div class="page-footer__links-academy-info">
+    <p class="page-footer__links-academy-info-text">Разработано</p>
+    <a class="page-footer__academy-info-link">
+      <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
+    </a>
   </div>
 </footer>
 </body>

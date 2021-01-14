@@ -1,13 +1,69 @@
+.photos {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 476px 349px 349px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 267px;
+    width: 1200px;
+    margin-bottom: 63px;
+  }
+}
+
+.photo {
+  margin-bottom: 38px;
+}
+
+.photo__information {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: @background-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -80px;
+  }
+}
+
+.photo__link-image {
+  width: 298px;
+  height: 298px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 267px;
+    margin-bottom: -7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+}
+
 .photo__link {
   text-decoration: none;
 }
 
-.photo__heading {
+.photo__likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.photo__author-heading {
   line-height: @line-height-medium;
   font-weight: @font-bold;
 }
 
-.photo__text {
+.photo__author-text {
   text-transform: none;
   line-height: @line-height-medium;
   color: @font-grey;
@@ -16,4 +72,55 @@
 .photo__likes-counter {
   line-height: @line-height-medium;
   font-weight: @font-bold;
+}
+
+.photo:first-child {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+.photo:first-child .photo__link-image {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.photo:first-child .photo__information {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -80px;
+    width: 1200px;
+  }
+}
+
+
+.photo:nth-child(2) .photo__information,
+.photo:nth-child(3) .photo__information,
+.photo:nth-child(4) .photo__information {
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
